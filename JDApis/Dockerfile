@@ -1,5 +1,6 @@
 FROM python:3.10.2-slim-bullseye
 WORKDIR .
+RUN docker compose up
 RUN pip install Django
 RUN pip install djangorestframework
 COPY requirements.txt requirements.txt
